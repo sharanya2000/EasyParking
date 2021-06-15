@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minor Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="menu-bar" onclick="showmenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="close-bar" onclick="hidemenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="logo">
+            <h3><span onclick="displayHome()">EZS</span></h3>
+        </div>
+        <div id="log-reg">
+            <h3 id="login" onclick="showlog()">Login</h3>
+            <h3 id="newlogin" onclick="logOut()">Login</h3>
+        </div>
+    </div>
+    <div id="pseudo-content">
+
+        <div class="hor-line"></div>
+
+        <div class="start">
+            <h1>EZSafeParking.in</h1>
+            <h2>PARKING JUST GOT A LOT SIMPLER</h2>
+            <h6>Book the Best Spaces & Save Time and Money.<br>
+                Reserve a space with a few taps and skip the parking hunt.<br>
+                Park your car in seconds and go do your thing.
+            </h6>
+            <button onclick="displaySpots()">FIND NOW</button>
+        </div>
+        <div class="hor-line"></div>
+        <div class="taarif">
+            <div class="sec-a">
+                <img src="how-it-works-drive-arrive-park-white@2x.png">
+                <h1>DRIVE<br>
+                    <span>ARRIVE</span><br>
+                    & PARK<br>
+                </h1>
+                <p>Enter easily with your mobile parking pass <br>Your space is waiting – pull in and go do your thing
+                </p>
+            </div>
+            <div class="sec-b">
+
+                <h1>DISCOVER<br>
+                    <span>AMAZING</span><br>
+                    SPACES<br>
+                </h1>
+                <p>Find parking anywhere, for now or for later<br>Compare prices & pick the place that's best for you
+                </p>
+                <img src="791f87c3-discover-amazing-spaces-3x_0ru0pi0rs0pi000000.png">
+            </div>
+            <div class="sec-c">
+                <img src="e2260473-app-phonemock-3x_0nw0fq0nw0fq000000.png">
+                <h1>RESERVE<br>
+                    <span>PREPAY</span><br>
+                    & SAVE<br>
+                </h1>
+                <p>Book a space in just a few easy clicks<br>Save up to 50% off standard rates
+                </p>
+            </div>
+        </div>
+        <div class="hor-line"></div>
+        <div class="footer">
+            <div class="foot1">
+                <h3><span>EZS</span></h3>
+            </div>
+            <div class="foot2">
+                <div class="part1">
+                    <h2>GET TO KNOW</h2>
+                    <h4>About US</h4>
+                    <h4>How it Works</h4>
+                    <h4>Tools</h4>
+                </div>
+                <div class="part2">
+                    <h2>CONNECT US</h2>
+                    <H4>Our Platform</H4>
+                    <h4>Feedback</h4>
+                </div>
+            </div>
+            <div class="foot3">
+                <h2>FIND US HERE</h2>
+                <h4>CAMPUS 3</h4>
+                <H4>CAMPUS 6</H4>
+                <H4>CAMPUS 8</H4>
+                <H4>CAMPUS 12</H4>
+                <H4>CAMPUS 15</H4>
+                <H4>Browse More...</H4>
+            </div>
+            <div class="foot4">
+                <div class="part3">
+                    <H2>LET US HELP YOU</H2>
+                    <h4>Terms of Use</h4>
+                    <h4>FAQs</h4>
+                </div>
+                <div class="part4">
+                    <h2>GET IN TOUCH</h2>
+                    <h4>Mail Us</h4>
+                    <h4>Instagram</h4>
+                    <h4>Facebook</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="side-menu">
+        <h3 onclick="displayAbout()">About</h3>
+        <h3 onclick="displayHelp()">Help</h3>
+        <h3 onclick="displaySubs()">Subscription</h3>
+        <hr>
+        <h3 onclick="displayVehicle()">Vehicle</h3>
+        <h3 onclick="displaySpots()">Parking Spots</h3>
+        <h3 onclick="displayProfile()">Profile</h3>
+        <h3 onclick="displayFare()">Fare</h3>
+        <h3 onclick="displayFAQ()">FAQ</h3>
+        <hr>
+        <h3 onclick="displayContact()">Contact Us</h3>
+        <h3 onclick="displayFeedback()">Feedback</h3>
+    </div>
+
+    <div id="form-back">
+        <div id="form-reg">
+            <div class="part-b">
+                <img src="vecteezy_background-geometric-waves_fj0121_generated.jpg">
+            </div>
+            <div class="part-a">
+                <div id="close" onclick="closelog()">
+                    ❌
+                </div>
+                <h5>Full Name :</h5><input id="fn" required type="text" placeholder="Enter Your Full Name">
+                <h5>Email id :</h5><input required type="email" placeholder="Enter Your Email">
+                <h5>Password :</h5><input required type="password" placeholder="Enter Your Password">
+                <h5>Contact no.</h5><input required type="text" placeholder="Enter Phone Number"><br>
+                <button type="submit" onclick="loginChange()">Register</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="fare-calculator">
+        <div class="hor-line"></div>
+        <h2 align="center">CALCULATE THE FARE HERE</h2>
+        <div class="calc-system">
+            <div class="calculator">
+                <h4>Select Spot :
+                    <select id="select-spot">
+                        <option>Campus3</option>
+                        <option>Campus6</option>
+                        <option>Campus8</option>
+                        <option>Campus12</option>
+                        <option>Campus15</option>
+                    </select>
+                </h4>
+                <h4>No. of Hours :
+                    <input type="number" min=1 max=23 id="hours" value=1>
+                </h4>
+                <h4 id="tov">Type of Vehicle :
+                    <select id="vehicle">
+                        <option>2 Wheelers </option>
+                        <option>Sedan</option>
+                        <option>SUV</option>
+                        <option>Mid-Size</option>
+
+                    </select>
+                </h4>
+                <button type="submit" onclick="calculate()">CALCULATE</button>
+            </div>
+            <div class="cal-line"></div>
+            <div class="bill">
+                <h4>Periodic Bill :</h4><input value=0 type="text" id="per-bill" disabled>
+                <h4>Taxes :</h4> <input type="text" value=0 id="tax" disabled>
+                <h4>Payable Amount :</h4> <input type="text" value=0 id="pay-amt" disabled>
+                <a href="https://rishavsr99.github.io/confirm.github.io/">BOOK NOW</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="parking-spots">
+        <div class="hor-line"></div>
+        <div class="heading">
+            <h2>WE ARE HERE</h2>
+        </div>
+        <div class="cards">
+            <div class="c c3">
+                <h5>CAMPUS</h5>
+                <h1>3</H1>
+                <h3>BOOK NOW</h3>
+                <H3 onclick="displayFare()">BOOKING FARE</H3>
+            </div>
+            <div class="c c6">
+                <h5>CAMPUS</h5>
+                <h1>6</h1>
+                <h3>BOOK NOW</h3>
+                <H3 onclick="displayFare()">BOOKING FARE</H3>
+            </div>
+            <div class="c c8">
+                <h5>CAMPUS</h5>
+                <h1>8</h1>
+                <h3>BOOK NOW</h3>
+                <H3 onclick="displayFare()">BOOKING FARE</H3>
+            </div>
+            <div class="c c12">
+                <h5>CAMPUS</h5>
+                <h1>12</h1>
+                <h3>BOOK NOW</h3>
+                <H3 onclick="displayFare()">BOOKING FARE</H3>
+            </div>
+            <div class="c c15">
+                <h5>CAMPUS</h5>
+                <h1>15</h1>
+                <h3>BOOK NOW</h3>
+                <H3 onclick="displayFare()">BOOKING FARE</H3>
+            </div>
+        </div>
+        <div class="hor-line"></div>
+    </div>
+
+    <div id="vehicle-reg">
+        <div class="hor-line"></div>
+
+        <div class="veh-content">
+            <div class="veh-image">
+                <img src="car-park.png">
+            </div>
+            <div class="veh-form">
+                <h4>Vehicle Number : <input type="text" placeholder="JH-02X-XXXX"></h4>
+                <h4>DL Number : <input type="text" placeholder="XXXXXXXXXXXX"></h4>
+                <h4>Year of Reg. : <input type="text" placeholder="XXXX"></h4>
+                <h4>Type of Vehicle: <input type="text" placeholder="XXXXXXX"></h4>
+                <h4>Pollution Checked: <input type="text" placeholder="YES/NO"></h4>
+                <button type="submit">REGISTER</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="faqs">
+        <div class="hor-line"></div>
+        <h1>FAQs</h1>
+        <div class="text">
+            <h3>What's the cancellation policy?</h3>
+            <h5>All parking passes are eligible for a full refund prior to the start time on the pass, except where
+                noted otherwise.<br>
+
+                To cancel, simply log in to your account on web or in the app, view your passes, and click "cancel".<br>
+                You can also do this using the "cancel " link at the bottom of the pass itself.<br>
+
+                Please keep in mind, once the arrival time has passed, all bookings are non-refundable.<br></h5>
+            <h3>Are there any additional fees?</h3>
+            <h5>No additional fees.</h5>
+            <h3>Do I have in-and-out privileges?</h3>
+            <h5>In most instances, no. The majority of locations on our Website do not allow re-entry</h5>
+        </div>
+    </div>
+
+
+    <div id="logOut">
+                <button onclick="backToHome()">Log Out</button>
+    </div>
+
+    <div id="about">
+        <div id="about-container">
+
+        </div>
+    </div>
+
+    <div id="Contact-us">
+        <div class="close-tag">
+            <p>❌</p>
+        </div>
+        <div class="contact-form">
+            <h3>To : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span>Ezsparking@ezs.com</span></h3>
+            <h3>Subject : &nbsp; <input class="sub-inp" type="text" ></h3>
+            <h3>Message : &nbsp; <input class="mes-inp" type="text"></h3>
+            <button id="msg-sent" onclick="sendMsg()">Send</button>
+            <button id="sended">✅ Message Sent</button>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
